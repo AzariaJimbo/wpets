@@ -1,0 +1,80 @@
+.music-page-container {
+    width: 100%;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.music-page {
+    width: 70%;
+}
+
+img {
+    width: 100%;
+}
+
+.song-boxs {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 300px));
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.song-box {
+    text-align: center;
+    box-shadow: 0 0 1px 1px rgba(94, 94, 94, 0.1);
+}
+
+/* music-filter-section */
+.music-filter-section {
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.music-filter-section .filters {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.music-filter-section .filter {
+    color: rgb(173, 173, 173);
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin: 0 0.5rem;
+}
+
+.music-filter-section .filter:hover {
+    cursor: pointer;
+}
+
+.music-filter-section .filter.active {
+    border-bottom: 4px solid rgb(95, 70, 70);
+}
+
+@media(min-width: 800px) {
+    .music-filter-section .filter {
+        font-size: 1.2rem;
+        margin: 0 0.9rem;
+    }
+}
+
+/* paging  --main-backgroundColor: rgb(54, 54, 54);*/
+.paging {
+    color: #fff;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0;
+    background-color: rgba(150, 150, 150, 0.3);
+}
